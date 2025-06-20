@@ -53,7 +53,8 @@ SELECT
     p.name,
     SUM(s.quantity * p.price) AS total_revenue
 FROM sales s
-JOIN products p ON s.product_id = p.product_id
+JOIN products p 
+    ON s.product_id = p.product_id
 GROUP BY p.name;
 
 -- Top 3 best-selling products
@@ -61,7 +62,8 @@ SELECT
     p.name,
     SUM(s.quantity) AS total_units_sold
 FROM sales s
-JOIN products p ON s.product_id = p.product_id
+JOIN products p 
+    ON s.product_id = p.product_id
 GROUP BY p.name
 ORDER BY total_units_sold DESC
 LIMIT 3;
@@ -71,5 +73,6 @@ SELECT
     p.name,
     i.stock_level
 FROM inventory i
-JOIN products p ON i.product_id = p.product_id
+JOIN products p 
+    ON i.product_id = p.product_id
 WHERE i.stock_level < 10;
