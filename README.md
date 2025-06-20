@@ -1,6 +1,6 @@
 # SQL Business Analytics Project - James Zhu
 
-This SQL script sets up a simple retail analytics database designed to track products, sales, and inventory. It includes data creation and analytical queries that provide insights into business performance. The script is useful for practicing database design, data manipulation, and analytical SQL.
+This SQL script sets up a simple retail analytics database designed to track products, sales, and inventory. It includes data creation and analytical queries that provide insights into business performance.
 
 Key Features:
 
