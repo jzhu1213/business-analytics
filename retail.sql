@@ -48,8 +48,6 @@ INSERT INTO inventory VALUES
 (3, 15),
 (4, 5);
 
--- 📊 ANALYTICS QUERIES
-
 -- Total revenue by product
 SELECT 
     p.name,
